@@ -1,0 +1,10 @@
+[project]
+name = "demomarkdown"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "markdown>=3.8",
+    "pymdown-extensions>=10.14.3",
+]
