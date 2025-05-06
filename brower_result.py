@@ -87,4 +87,5 @@ try:
         print(f"Serving at http://localhost:{PORT}")
         httpd.serve_forever()
 except KeyboardInterrupt:
+    httpd.server_close()
     print("Server stopped.")
