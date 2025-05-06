@@ -35,6 +35,8 @@ sample_text = """# 属性列表扩展
 
 如果启用了[表格](/tables)扩展，则可以在表单元格上定义属性列表。要区分内联元素的属性与包含单元格的属性，属性列表必须与内容分开至少一个空白，并在单元格内容的末尾定义。由于表单元格只能在一行上，因此属性列表必须与单元格内容保持在同一行上。
 
+另:请参阅默认情况下，[Fenced代码块](/fenced_code)扩展包括对属性列表的有限支持, [文档链接](https://python-markdown.github.io/extensions/fenced_code_blocks/#attributes)。要获得[全面支持](https://python-markdown.github.io/extensions/fenced_code_blocks/#keyvalue-pairs)，必须启用两个扩展。
+
 """
 
 # 转换 Markdown 文本
