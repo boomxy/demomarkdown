@@ -5,9 +5,9 @@ import markdown
 md = markdown.Markdown(extensions=["markdown.extensions.admonition"])
 
 # 示例 Markdown 文本
-sample_text = """# 警告框扩展 admonition 
+sample_text = """# 警告框扩展
 
-这是一个使用 admonition 扩展的示例。
+这是一个使用 admonition 警告框扩展的示例。
 
 !!! note "双引号中的可选显式标题"
     任何数量的其他缩入markdown元素。
