@@ -5,15 +5,15 @@ import markdown
 md = markdown.Markdown(extensions=["markdown.extensions.abbr"])
 
 # 示例 Markdown 文本
-sample_text = """# 示例标题
+sample_text = """# 缩写扩展
 
-这是一个使用 abbr 扩展的示例。
+这是一个使用 abbr 扩展(Abbreviations)的示例。
 
-The HTML specification
-is maintained by the W3C.
+这句 HTML 被缩写，鼠标放上去会显示缩写的具体内容
+这个 W3C 也是缩写的.
 
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
+*[HTML]: 超文本标记语言 Hyper Text Markup Language
+*[W3C]:  万维网联盟 World Wide Web Consortium
 """
 
 # 转换 Markdown 文本
