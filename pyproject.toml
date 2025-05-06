@@ -6,5 +6,6 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "markdown>=3.8",
+    "pygments>=2.19.1",
     "pymdown-extensions>=10.14.3",
 ]
