@@ -2,10 +2,12 @@ import os
 import markdown
 from markdown.extensions import Extension
 
+
 class MyExtension(Extension):
     def extendMarkdown(self, md):
         # 在这里添加你的扩展逻辑
         pass
+
 
 '''
 这个脚本是创建一个目录，并在该目录下为每个 Markdown 扩展生成一个示例脚本。
@@ -14,6 +16,7 @@ class MyExtension(Extension):
 # 获取所有自带的扩展
 extensions = [
     "markdown.extensions.abbr",
+    "markdown.extensions.extra",
     "markdown.extensions.attr_list",
     "markdown.extensions.def_list",
     "markdown.extensions.fenced_code",
@@ -112,4 +115,3 @@ html = md.convert(sample_text)
 print(html)
 """)
     print(f"已生成示例脚本: {file_path}")
-
