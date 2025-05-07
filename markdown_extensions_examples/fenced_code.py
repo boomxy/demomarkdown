@@ -5,9 +5,13 @@ import markdown
 md = markdown.Markdown(extensions=["markdown.extensions.fenced_code"])
 
 # 示例 Markdown 文本
-sample_text = """# 示例标题
+sample_text = """# Fenced代码块
 
-这是一个使用 fenced_code 扩展的示例。
+这是一个使用 fenced_code Fenced代码块扩展的示例。
+
+
+Fenced代码块扩展添加了一种定义代码块的辅助方法，它克服了缩入代码块的一些限制。
+
 
 下边是代码块
 
