@@ -5,7 +5,7 @@ import markdown
 md = markdown.Markdown(extensions=["markdown.extensions.codehilite"])
 
 # 示例 Markdown 文本
-sample_text = """# 代码高亮
+sample_text = """# 代码高亮扩展
 
 这是一个使用 codehilite 代码高亮扩展的示例。
 

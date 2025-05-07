@@ -5,7 +5,7 @@ import markdown
 md = markdown.Markdown(extensions=["markdown.extensions.def_list"])
 
 # 示例 Markdown 文本
-sample_text = """# 定义列表
+sample_text = """# 定义列表扩展
 
 这是一个使用 def_list 定义列表扩展的示例。
 
