@@ -5,7 +5,7 @@ import markdown
 md = markdown.Markdown(extensions=["markdown.extensions.legacy_attrs"])
 
 # 示例 Markdown 文本
-sample_text = """# 遗留/旧属性
+sample_text = """# 遗留/旧属性扩展
 
 这是一个使用 legacy_attrs 遗留/旧属性扩展的示例。
 
