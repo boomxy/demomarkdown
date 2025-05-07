@@ -5,13 +5,54 @@ import markdown
 md = markdown.Markdown(extensions=["markdown.extensions.meta"])
 
 # 示例 Markdown 文本
-sample_text = """# 示例标题
+sample_text = """---\
+name: 元属性
+type: 扩展
+date: 2025-05-07
+tags: 标签
+      标
+      签
+---
+# 元属性扩展
 
-这是一个使用 meta 扩展的示例。
+这是一个使用 meta 元属性扩展的示例。
+
+meta 信息不会显示
+
+[使用元数据的方式](https://python-markdown.github.io/extensions/meta_data/#accessing-the-meta-data)
+
 """
 
 # 转换 Markdown 文本
-html = md.convert(sample_text)
+convert_html = md.convert(sample_text)
 
+html = f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>元属性</title>
+</head>
+<body>
+{convert_html}
+<hr />
+
+<p>meta获取到的内容为: {md.Meta}</p>
+
+<p>可以被 python 获取到: {md.Meta.keys()}</p>
+
+遍历所有属性
+
+<ul>
+{''.join([f"<li>{key: <10} {': ' + ','.join(val)}</li>" for key, val in md.Meta.items()])}
+</ul>
+
+</body>
+</body>
+</html>"""
+
+
+
+# 输出 meta 的值
+print(md.Meta)
 # 输出结果
 print(html)
