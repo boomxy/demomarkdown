@@ -68,7 +68,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Content-type", "text/html; charset=utf-8")
             self.end_headers()
             self.wfile.write(home())
-        elif self.path == '/favicon.ico':
+        elif self.path == '/favicon.ico' or self.path == '/.well-known/appspecific/com.chrome.devtools.json':
             self.send_response(404)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
