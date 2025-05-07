@@ -19,6 +19,11 @@ tags: 标签
 
 meta 信息不会显示
 
+
+元数据扩展添加了用于定义有关文档的元数据的语法。它的灵感来自MultiMarkdown的语法并遵循其语法。
+
+目前，这个扩展不以任何方式使用元数据，只是将其作为Markdown实例的Meta属性提供给其他扩展或直接由您的python代码使用。[内容来源](https://python-markdown.github.io/extensions/meta_data/#summary)
+
 [使用元数据的方式](https://python-markdown.github.io/extensions/meta_data/#accessing-the-meta-data)
 
 """
